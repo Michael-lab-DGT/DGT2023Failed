@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.Dark1.tutorialmod.block.ModBlocks;
 import net.Dark1.tutorialmod.item.ModCreativeModeTabs;
 import net.Dark1.tutorialmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -67,13 +68,17 @@ public class TutorialMod
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
         }
 
-        //Putting Modded into the Building Blocks Creative menu Tab
-        if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+        if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.BLACK_OPAL_ORE);
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+        }
+
+
+        //Putting Modded into the Building Blocks Creative menu Tab
+        if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
 
         }
     }
