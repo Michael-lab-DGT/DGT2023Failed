@@ -66,6 +66,14 @@ public class TutorialMod
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+
+            event.accept(ModBlocks.EBONY_LOG);
+            event.accept(ModBlocks.EBONY_WOOD);
+            event.accept(ModBlocks.STRIPPED_EBONY_LOG);
+            event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_PLANKS);
+            event.accept(ModBlocks.EBONY_LEAVES);
+            event.accept(ModBlocks.EBONY_SAPLING);
         }
 
         if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
@@ -73,12 +81,26 @@ public class TutorialMod
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+
+            event.accept(ModBlocks.EBONY_LOG);
+            // event.accept(ModBlocks.EBONY_WOOD);
+            //event.accept(ModBlocks.STRIPPED_EBONY_LOG);
+            //event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+            //event.accept(ModBlocks.EBONY_PLANKS);
+            event.accept(ModBlocks.EBONY_LEAVES);
+            //event.accept(ModBlocks.EBONY_SAPLING);
         }
 
 
         //Putting Modded into the Building Blocks Creative menu Tab
         if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+
+            //event.accept(ModBlocks.EBONY_LOG);
+            event.accept(ModBlocks.EBONY_WOOD);
+            event.accept(ModBlocks.STRIPPED_EBONY_LOG);
+            event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_PLANKS);
 
         }
     }
